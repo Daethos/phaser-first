@@ -1,0 +1,52 @@
+{
+    "anims": [
+        {
+            "key": "elven_knight_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_walk_1"
+                },
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_walk_2"
+                },
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_walk_3"
+                },
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "elven_knight_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_idle_1"
+                },
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_idle_2"
+                },
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_idle_3"
+                },
+                {
+                    "key": "elven_knight",
+                    "frame": "elvenknight_idle_4"
+                }
+            ]
+        }
+    ]
+}
