@@ -56,19 +56,19 @@
             "frames": [
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_walk_1"
+                    "frame": "mushroom_walk_1"
                 },
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_walk_2"
+                    "frame": "mushroom_walk_2"
                 },
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_walk_3"
+                    "frame": "mushroom_walk_3"
                 },
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_walk_4"
+                    "frame": "mushroom_walk_4"
                 }
             ]
         },
@@ -80,19 +80,19 @@
             "frames": [
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_idle_1"
+                    "frame": "mushroom_idle_1"
                 },
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_idle_2"
+                    "frame": "mushroom_idle_2"
                 },
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_idle_3"
+                    "frame": "mushroom_idle_3"
                 },
                 {
                     "key": "enemies",
-                    "frame": "normalmushroom_idle_4"
+                    "frame": "mushroom_idle_4"
                 }
             ]
         },

@@ -157,7 +157,7 @@
             }
         },
         {
-            "filename": "normalmushroom_idle_1",
+            "filename": "mushroom_idle_1",
             "frame": {
                 "w": 32,
                 "h": 32,
@@ -170,7 +170,7 @@
             }
         },
         {
-            "filename": "normalmushroom_idle_2",
+            "filename": "mushroom_idle_2",
             "frame": {
                 "w": 32,
                 "h": 32,
@@ -183,7 +183,7 @@
             }
         },
         {
-            "filename": "normalmushroom_idle_3",
+            "filename": "mushroom_idle_3",
             "frame": {
                 "w": 32,
                 "h": 32,
@@ -196,7 +196,7 @@
             }
         },
         {
-            "filename": "normalmushroom_idle_4",
+            "filename": "mushroom_idle_4",
             "frame": {
                 "w": 32,
                 "h": 32,
@@ -209,7 +209,7 @@
             }
         },
         {
-            "filename": "normalmushroom_walk_1",
+            "filename": "mushroom_walk_1",
             "frame": {
                 "w": 32,
                 "h": 32,
@@ -222,7 +222,7 @@
             }
         },
         {
-            "filename": "normalmushroom_walk_2",
+            "filename": "mushroom_walk_2",
             "frame": {
                 "w": 32,
                 "h": 32,
@@ -235,7 +235,7 @@
             }
         },
         {
-            "filename": "normalmushroom_walk_3",
+            "filename": "mushroom_walk_3",
             "frame": {
                 "w": 32,
                 "h": 32,
@@ -248,7 +248,7 @@
             }
         },
         {
-            "filename": "normalmushroom_walk_4",
+            "filename": "mushroom_walk_4",
             "frame": {
                 "w": 32,
                 "h": 32,

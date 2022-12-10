@@ -1,6 +1,6 @@
 export default class DropItem extends Phaser.Physics.Matter.Sprite {
     constructor (data) {
-        let { scene, x, y, frame } = data;
+        let { scene, name, x, y, frame } = data;
         super (scene.matter.world, x, y, 'Items', frame);
         this.scene.add.existing(this);
         const { Bodies } = Phaser.Physics.Matter.Matter;
@@ -9,6 +9,7 @@ export default class DropItem extends Phaser.Physics.Matter.Sprite {
         this.setFrictionAir(1);
         this.setScale(0.5);
         this.sound = this.scene.sound.add('pickup');
+        this.name = name;
     }
 
     pickup = () => {

@@ -1,4 +1,5 @@
 import MainScene from './MainScene.js';
+import InventoryScene from './InventoryScene.js';
 
 const config = {
     width: 512,
@@ -6,14 +7,14 @@ const config = {
     backgroundColor: '#000', // To see it
     type: Phaser.AUTO,
     parent: 'survival-game', // parent = id of the div
-    scene: [MainScene],
+    scene: [MainScene, InventoryScene],
     scale: {
         zoom: 2, // How far away you are from the screen
     },
     physics: {
         default: 'matter', // Matter can do more things than default
         matter: {
-            debug: true,
+            debug: true, // When in DEV mode
             gravity: { y : 0 }, // This is OFF, since it is a top-down and not a platformer
         }
     },
