@@ -1,5 +1,6 @@
 import MainScene from './MainScene.js';
 import InventoryScene from './InventoryScene.js';
+import CraftingScene from './CraftingScene.js';
 
 const config = {
     width: 512,
@@ -7,7 +8,7 @@ const config = {
     backgroundColor: '#000', // To see it
     type: Phaser.AUTO,
     parent: 'survival-game', // parent = id of the div
-    scene: [MainScene, InventoryScene],
+    scene: [MainScene, InventoryScene, CraftingScene],
     scale: {
         zoom: 2, // How far away you are from the screen
     },

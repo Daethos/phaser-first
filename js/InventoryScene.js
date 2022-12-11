@@ -37,13 +37,13 @@ export default class InventoryScene extends UIBaseScene {
             inventorySlot.depth = -1;
             inventorySlot.setInteractive();
             inventorySlot.on('pointerover', pointer => {
-                console.log(`Pointer Over: ${i}`);
+                // console.log(`Pointer Over: ${i}`);
                 this.hoverIndex = i;
             });
 
             let item = this.inventory.getItem(i);
             if (item) {
-                console.log(item, 'What are you?')
+                // console.log(item, 'What are you?')
                 inventorySlot.item = this.add.sprite(inventorySlot.x, inventorySlot.y - this.tileSize / 12, 'Items', items[item.name].frame)
                 inventorySlot.quantityText = this.add.text(inventorySlot.x, inventorySlot.y + this.tileSize / 6, item.quantity, {
                     font: '11px Courier',
@@ -69,6 +69,7 @@ export default class InventoryScene extends UIBaseScene {
 
         // Selection Wheel
         this.input.on('wheel', (pointer, gameObjects, deltaX, deltaY, deltaZ) => {
+            if (this.scene.isActive('CraftingScene')) return;
             this.inventory.selected = Math.max(0, this.inventory.selected + (deltaY > 0 ? 1 : -1)) % this.maxColumns;
             this.updateSelected();
         })
@@ -81,7 +82,7 @@ export default class InventoryScene extends UIBaseScene {
         // Dragging
         this.input.setTopOnly(false);
         this.input.on('dragstart', () => {
-            console.log('Drag Starting');
+            // console.log('Drag Starting');
             this.startIndex = this.hoverIndex;
             this.inventorySlots[this.startIndex].quantityText.destroy();
         });

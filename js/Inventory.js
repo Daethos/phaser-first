@@ -53,6 +53,15 @@ export default class Inventory {
         this.broadcast();
     }
 
+    removeItem(itemName) {
+        let existingKey = Object.keys(this.items).find(key => this.items[key].name === itemName);
+        if (existingKey) {
+            this.items[existingKey].quantity--;
+            if (this.items[existingKey].quantity <= 0) delete this.items[existingKey];
+        }
+        this.broadcast();
+    }
+
     getItem(index) {
         return this.items[index];
     }
@@ -70,5 +79,9 @@ export default class Inventory {
 
     getItemFrame(item) {
         return items[item.name].frame;
+    }
+
+    getItemQuantity(itemName) { // Good Lord This is a Mouthful
+        return Object.values(this.items).filter(i => i.name === itemName).map(i => i.quantity).reduce((acc, cur) => acc + cur, 0);
     }
 }

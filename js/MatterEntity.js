@@ -38,7 +38,7 @@ export default class MatterEntity extends Phaser.Physics.Matter.Sprite {
         if (this.dead) {
             this.onDeath();
             this.drops.forEach(drop => {
-                console.log(drop, 'Drop?')
+                // console.log(drop, 'Drop?')
                 new DropItem({ name: drop, scene: this.scene, x: this.x, y: this.y, frame: items[drop].frame })})
         }
     };

@@ -1,5 +1,6 @@
 // import Phaser from "phaser";
 
+import Crafting from "./Crafting.js";
 import Enemy from "./Enemy.js";
 import Player from "./Player.js";
 import Resource from "./Resource.js";
@@ -45,6 +46,17 @@ export default class MainScene extends Phaser.Scene {
         camera.setLerp(0.1, 0.1);
         camera.setBounds(0, 0, this.game.config.width, this.game.config.height);
         this.scene.launch('InventoryScene', { mainScene: this });
+        this.crafting = new Crafting({ mainScene: this });
+
+        // This Allows You To Toggle The UI Of Crafting With 'C'
+        this.input.keyboard.on('keydown-C', () => {
+            if (this.scene.isActive('CraftingScene')) {
+                this.scene.stop('CraftingScene');
+            } else {
+                this.scene.launch('CraftingScene', { mainScene: this });
+            }
+        });
+
     }
 
     update() {
